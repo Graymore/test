@@ -1,0 +1,29 @@
+@import url('./fonts.scss');
+@import url('./theme/imports.scss');
+
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style: none;
+    border: unset;
+    outline: unset;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: black;
+        color: silver;
+    }
+      
+    @media (prefers-color-scheme: light) {
+        background-color: rgb(242, 242, 242);
+        color: black;
+    }
+}

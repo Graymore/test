@@ -1,0 +1,13 @@
+.tippy-box[data-theme~='custom'] {
+    background: unset;
+    box-shadow: unset;
+}
+
+.tippy-box[data-theme~='custom'] .tippy-content {
+    padding: unset;
+}
+
+.tippy-box[data-theme~='custom'] .tippy-arrow {
+    color: unset;
+    display: none;
+}
