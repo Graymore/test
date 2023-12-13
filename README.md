@@ -1,4 +1,4 @@
-# test-contacts
+# vue-contacts
 
 ## Установка
 ```
