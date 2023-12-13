@@ -1,4 +1,6 @@
-# test-contacts
+# vue-contacts
+
+Support light/dark theme OS.
 
 ## Установка
 ```
