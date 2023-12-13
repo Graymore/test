@@ -1,7 +1,30 @@
 :root {
-    --popup-bg-color: white;
-    --popup-color: black;
-
-    --green: #40b883;
-    --hr: #ebebeb;
+    @media (prefers-color-scheme: dark) {
+        --header-bg-color: rgba(70, 70, 70, 0.7);
+        --body-bg-color: rgb(32, 32, 32);
+        --btn-bg-color: rgb(86, 86, 86);
+        --btn-hover-bg-color: rgb(75, 75, 75);
+        --section-bg-color: rgb(59, 59, 59);
+        --avatar-bg-color: rgb(79, 79, 79);
+        --color: silver;
+        --popup-bg-color: white;
+        --popup-color: black;
+        --green: #40b883;
+        --hr: #585858;
+    }
+      
+    @media (prefers-color-scheme: light) {
+        --header-bg-color: rgba(255, 255, 255, 0.7);
+        --body-bg-color: rgb(247, 247, 247);
+        --section-bg-color: white;
+        --btn-bg-color: rgb(240, 240, 240);
+        --btn-hover-bg-color: rgb(235, 235, 235);
+        --avatar-bg-color: rgb(236, 236, 236);
+        --color: black;
+        --popup-bg-color: white;
+        --popup-color: black;
+        --green: #40b883;
+        --hr: #ebebeb;
+    }
+    
 }

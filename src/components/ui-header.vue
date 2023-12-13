@@ -62,7 +62,7 @@
         top: 0;
         width: 100%;
         height: var(--header-height);
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: var(--header-bg-color);
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         z-index: 100;
@@ -90,7 +90,7 @@
         .header__title {
             font-size: 18px;
             font-weight: 500;
-            color: black;
+            color: var(--color);
         }
 
         .header__role {
@@ -108,8 +108,8 @@
 
         .header__client-btn {
             margin-left: auto;
-            background-color: rgb(240, 240, 240);
-            color: black;
+            background-color: var(--btn-bg-color);
+            color: var(--color);
             padding: 10px 15px;
             border-radius: 7px;
             font-size: 14px;
@@ -122,7 +122,7 @@
             line-height: 1;
 
             &:hover {
-                background-color: rgb(235, 235, 235);
+                background-color: var(--btn-hover-bg-color);
             }
         }
     }

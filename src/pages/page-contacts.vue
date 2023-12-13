@@ -224,7 +224,7 @@
     const getContacts = async () => {
         state.loading = true
         await store.dispatch('getContacts')
-        getStats()
+        await getStats()
         paginator.value.calculate()
         state.loading = false
     }
@@ -248,11 +248,8 @@
 
     onMounted(async () => {
         // Если в стейте нет контактов, значит нужно их получить, вместе со статой
-        if (state.contacts.length === 0) {
-            await getContacts()
-            getStats()
-            state.loading = false
-        }
+        if (state.contacts.length === 0) await getContacts()
+        state.loading = false
     })
 </script>
 
@@ -265,7 +262,7 @@
         padding: 20px 0;
 
         .wrapper__section {
-            background-color: white;
+            background-color: var(--section-bg-color);
             border-radius: 10px;
             max-width: 1200px;
             width: 100%;
@@ -332,7 +329,7 @@
                         display: flex;
                         flex-direction: column;
                         min-width: 287px;
-                        background-color: rgb(247, 247, 247);
+                        background-color: var(--btn-bg-color);
                         padding: 10px;
                         border-radius: 10px;
                     }
@@ -356,7 +353,7 @@
                     .link {
                         margin-top: 5px;
                         .table__item-td-link {
-                            color: green;
+                            color: var(--green);
                             font-size: 13px;
                             font-weight: 500;
                         }
@@ -386,9 +383,9 @@
             }
 
             .filters__btn {
-                background-color: rgb(239, 239, 239);
+                background-color: var(--btn-bg-color);
                 line-height: 1;
-                color: rgb(88, 88, 88);
+                color: var(--color);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -398,11 +395,11 @@
                 transition: background-color .18s, color .18s;
 
                 &:hover {
-                    background-color: rgb(231, 231, 231);
+                    background-color: var(--btn-hover-bg-color);
                 }
 
                 &.filters__btn_active {
-                    background-color: rgb(64, 184, 131);
+                    background-color: var(--green);
                     color: white;
                 }
             }
@@ -454,7 +451,7 @@
                 padding: 5px;
 
                 &:nth-child(2n) {
-                    background-color: rgb(242, 242, 242);
+                    background-color: rgba(181, 181, 181, 0.1);
                 }
             }
 
@@ -476,7 +473,7 @@
         display: flex;
         flex-direction: column;
         gap: 3px;
-        background-color: white;
+        background-color: var(--section-bg-color);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         padding: 5px;
         border-radius: 5px;
@@ -485,7 +482,7 @@
 
         .popup__button {
             cursor: pointer;
-            color: black;
+            color: var(--color);
             border-radius: 5px;
             background-color: transparent;
             font-size: 14px;

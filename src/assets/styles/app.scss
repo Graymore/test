@@ -16,14 +16,6 @@
 body {
     font-size: 14px;
     font-weight: 400;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: black;
-        color: silver;
-    }
-      
-    @media (prefers-color-scheme: light) {
-        background-color: rgb(242, 242, 242);
-        color: black;
-    }
+    background-color: var(--body-bg-color);
+    color: var(--color);
 }

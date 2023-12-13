@@ -6,6 +6,9 @@
     Tippy.vue
     https://github.com/thecodewarrior/Tippy.vue
 
+    Axios
+    https://github.com/axios/axios
+
     Vuex
     https://vuex.vuejs.org
 

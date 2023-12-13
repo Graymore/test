@@ -57,7 +57,7 @@
 
 <style module lang="scss">
     .avatar {
-        background-color: rgb(236, 236, 236);
+        background-color: var(--avatar-bg-color);
         position: relative;
         display: flex;
         flex-shrink: 0;

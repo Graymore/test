@@ -55,7 +55,7 @@
         align-items: center;
         gap: 5px;
         cursor: pointer;
-        background-color: rgb(244, 244, 244);
+        background-color: var(--btn-bg-color);
         border: 2px solid transparent;
         padding: 10px;
         border-radius: 10px;

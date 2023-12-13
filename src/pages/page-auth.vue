@@ -41,7 +41,7 @@
 <style module lang="scss">
     .auth {
         margin: auto;
-        background-color: white;
+        background-color: var(--section-bg-color);
         padding: 40px;
         border-radius: 10px;
         max-width: 500px;

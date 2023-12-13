@@ -73,7 +73,8 @@
         gap: 3px;
 
         .pagination__btn {
-            background-color: rgb(241, 241, 241);
+            background-color: var(--btn-bg-color);
+            color: var(--color);
             padding: 5px;
             font-size: 14px;
             font-weight: 500;
